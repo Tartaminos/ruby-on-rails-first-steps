@@ -1,0 +1,14 @@
+
+<div class="tabela_caixas">
+<p></p>
+    <div class="bemvindo"> Bem vindo <%= @usuario_logado.nome %>, Selecione um opção </div>
+    <div class="pad"> </div>   
+    <div class="estiloindex">
+<p></p>
+    <div class="divindex"><%= link_to 'Caixa', caixas_eletronicos_path, class:"botao_editar"  %></div>
+<p></p>
+    <div class="divindex"> <%=  link_to 'Usuario', usuarios_path, class:"botao_editar" %> </div>
+<p></p>
+    <div> <%= link_to 'Sair', deslogar_path, confirm: 'tamus vazanus?' %> </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<table>
+        <thead> <div class="cabecalho">
+                <div class="bemvindo"> Bem vindo, estes são os caixas do nosso banco! </div>              
+        </div></thead>
+        <tbody>
+        <p> </p>
+                <div class="tabela_caixas">
+                        <div class="fundo_caixas">
+                                <p> </p>
+                                <div>
+                                        <% @caixa_eletronico.each do |caixa_eletronico|%>
+                                        <p><%= link_to caixa_eletronico.nome, caixa_eletronico_path(id: caixa_eletronico.id), class:'dentro_tabela'%>
+                                        <%= link_to 'Editar', edit_caixa_eletronico_path(id: caixa_eletronico.id), class:'botao_editar'%>
+                                        <%= link_to 'Deletar', caixa_eletronico_path(id: caixa_eletronico.id), method: :delete, confirm: 'ta safe mermão?', class:'botao_excluir'%>
+                                        </p><% end %>
+                                </div>
+                        </div>        
+                </div>
+                
+        </tbody> 
+        <p> </p>
+        <div class="cabecalho">
+        <div class="botaonovo"> <%=link_to 'Novo Caixa', new_caixa_eletronico_path %>  || 
+        <%= link_to 'Voltar', root_path %> </div> 
+        </div>
+</table>

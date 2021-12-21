@@ -1,0 +1,34 @@
+<div class="fundo_div">
+<p> </p>
+    <div class="botao2"> 
+        <%= link_to 'New', new_veiculo_path, class:'botao'%>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome </th>
+                    <th>Velocidade Máxima </th>
+                    <th>Velocidade Atual </th>
+                    <th>Quantidade de Marchas </th>
+                    <th>Marcha Atual </th>
+                    <th>Ligado? </th> 
+                </tr>
+            </thead>
+            <tbody>
+                <% @veiculos.each do |veiculo| %>
+                    <tr>
+                        <td class="verdefloresta"><%= link_to veiculo.nome, veiculo_path(id: veiculo.id), class:'nomestilo' %> </td>
+                        <td><%= veiculo.velocidade_maxima %> </td>
+                        <td><%= veiculo.velocidade_atual %> </td>
+                        <td><%= veiculo.quantidade_marchas %> </td>
+                        <td><%= veiculo.marcha_atual %> </td>
+                        <td><%= veiculo.ligado ? 'sim' : 'não'  %> </td>
+                        <td> <%= link_to 'Editar', edit_veiculo_path(id: veiculo.id), class:'editar'%></td>
+                        <td> <%= link_to 'Excluir', veiculo_path(id:veiculo.id), method: :delete, confirm:'Vai na fé mermão', class:'excluir' %></td>
+                    </tr>
+                <% end %>
+            </tbody>
+        
+        </table>
+</div>
+

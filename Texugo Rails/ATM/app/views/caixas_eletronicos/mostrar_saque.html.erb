@@ -1,0 +1,8 @@
+<div class="nome_caixa">
+    <%= form_tag(sacar_path(id: @caixa_eletronico.id)) do %>
+        <p> <%= label_tag :valor_saque, 'Valor saque'%></p>
+        <p> <%= number_field_tag :valor_saque, class:'centro' %>
+        <div><%= submit_tag 'Sacar' %></div>
+    <% end %>
+
+</div>

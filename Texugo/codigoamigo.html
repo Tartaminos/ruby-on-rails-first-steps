@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>
+        Lampadas
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="lampada_apagada.jpeg" id="lampada">
+</body>
+</html>
+<script type="text/javascript">
+    $('#lampada').on('click', function(){
+        if($('#lampada').attr('src') == "lampada_apagada.jpeg"){
+            $('#lampada').attr('src','lampada_acesa.jpeg')
+            $('body').css('background-color','white');
+        }else{
+            $('#lampada').attr('src','lampada_apagada.jpeg')
+            $('body').css('background-color','black');
+        }
+    });
+</script>

@@ -1,0 +1,33 @@
+<h1>Listing cebolinhas</h1>
+
+<table>
+  <tr>
+    <th>Cabelo</th>
+    <th>Olhos</th>
+    <th>Orelhas</th>
+    <th>Idade</th>
+    <th>Altura</th>
+    <th>Vivo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cebolinhas.each do |cebolinha| %>
+  <tr>
+    <td><%= cebolinha.cabelo %></td>
+    <td><%= cebolinha.olhos %></td>
+    <td><%= cebolinha.orelhas %></td>
+    <td><%= cebolinha.idade %></td>
+    <td><%= cebolinha.altura %></td>
+    <td><%= cebolinha.vivo %></td>
+    <td><%= link_to 'Show', cebolinha %></td>
+    <td><%= link_to 'Edit', edit_cebolinha_path(cebolinha) %></td>
+    <td><%= link_to 'Destroy', cebolinha, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cebolinha', new_cebolinha_path %>

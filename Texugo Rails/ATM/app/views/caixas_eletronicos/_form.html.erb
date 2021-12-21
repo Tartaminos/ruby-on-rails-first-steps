@@ -1,0 +1,37 @@
+<div class="nome_caixa">
+    <%= form_for @caixa_eletronico do |f| %>
+    <% if @caixa_eletronico.errors.any? %>
+  <div id="error_explanation">
+    <h2 class="errosmenor"><%= pluralize(@caixa_eletronico.errors.count, "error") %> As informações não podem ser salvas: </h2>
+  <p> </p>
+    <ul class="errosmenor">
+    <% @caixa_eletronico.errors.full_messages.each do |msg| %>
+      <li><%= msg.humanize %></li>
+    <% end %>
+    </ul>
+  </div>
+    <% end %>
+        <p><%= f.label :nome,'Nome' %> </p>
+        <p><%= f.text_field :nome, class:'centro'%> </p>
+        <p><%= f.label :local,'Local'%> </p>
+        <p><%= f.text_field :local, class:'centro' %> </p>
+        <p><%= f.label :funcionando, 'Está funcionando?'%> </p>
+        <p><%= f.check_box :funcionando, class:'centro' %></p>
+        <div> Notas Disponíveis
+            <p><%= f.label :nota2, 'Nota 2' %></p>
+            <p><%= f.number_field :nota2, min: 0,  class:'centro' %></p>
+            <p><%= f.label :nota5, 'Nota 5' %></p>
+            <p><%= f.number_field :nota5, class:'centro' %></p>
+            <p><%= f.label :nota10, 'Nota 10' %></p>
+            <p><%= f.number_field :nota10, class:'centro' %></p>
+            <p><%= f.label :nota20, 'Nota 20' %></p>
+            <p><%= f.number_field :nota20, class:'centro' %></p>
+            <p><%= f.label :nota50, 'Nota 50' %></p>
+            <p><%= f.number_field :nota50, class:'centro' %></p>
+            <p><%= f.label :nota100, 'Nota 100' %></p>
+            <p><%= f.number_field :nota100, class:'centro' %></p>
+            <div> <%= button_to "Abastecer", abastecer_path %>
+        </div>
+        
+    <% end %> 
+</div> 

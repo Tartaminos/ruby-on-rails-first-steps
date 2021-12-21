@@ -1,0 +1,28 @@
+
+
+<table>
+        <thead> <div class="cabecalho">
+                              
+        </div></thead>
+        <tbody>
+        <p> </p>
+                <div class="tabela_caixas">
+                        <div class="fundo_caixas">
+                                <p> </p>
+                                <div>
+                                        <% @usuarios.each do |usuario|%>
+                                        <p><%= link_to usuario.nome, usuario_path(id: usuario.id), class:'dentro_tabela'%>
+                                        <%= link_to 'Editar', edit_usuario_path(id: usuario.id), class:'botao_editar'%>
+                                        <%= link_to 'Deletar', usuario_path(id: usuario.id), method: :delete, confirm: 'ta safe mermão?', class:'botao_excluir'%>
+                                        </p><% end %>
+                                </div>
+                        </div>        
+                </div>
+                
+        </tbody> 
+        <p> </p>
+        <div class="cabecalho">
+        <div class="botaonovo"> <%=link_to 'Novo Usuario', new_usuario_path %> ||
+        <%= link_to 'Voltar', bem_vindos_path %> </div>     
+        </div>
+</table>

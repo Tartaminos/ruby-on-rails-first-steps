@@ -1,0 +1,41 @@
+<%= form_for(@cebolinha) do |f| %>
+  <% if @cebolinha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cebolinha.errors.count, "error") %> prohibited this cebolinha from being saved:</h2>
+
+      <ul>
+      <% @cebolinha.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cabelo %><br />
+    <%= f.text_field :cabelo %>
+  </div>
+  <div class="field">
+    <%= f.label :olhos %><br />
+    <%= f.text_field :olhos %>
+  </div>
+  <div class="field">
+    <%= f.label :orelhas %><br />
+    <%= f.text_field :orelhas %>
+  </div>
+  <div class="field">
+    <%= f.label :idade %><br />
+    <%= f.number_field :idade %>
+  </div>
+  <div class="field">
+    <%= f.label :altura %><br />
+    <%= f.text_field :altura %>
+  </div>
+  <div class="field">
+    <%= f.label :vivo %><br />
+    <%= f.check_box :vivo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

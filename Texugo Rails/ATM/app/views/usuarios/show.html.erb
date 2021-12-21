@@ -1,0 +1,19 @@
+eu sou o show dos usuarios
+
+<div class="dentro_local">
+    <div class="fundo_caixas">
+        <p> </p>
+        <div> <b> nome <%= @usuario.nome%> </b> </div> 
+        <h1> </h1>
+        <div > emails<%= @usuario.email%> </div>
+        <h1> </h1>
+        <div > senha <%= @usuario.senha%> </div>
+        <h1></h1>
+        <div > codigo <%= @usuario.codigo%> </div>
+        <h1></h1>
+        <div > gerente? <%= @usuario.gerente %> </div>
+        <h1></h1>
+        <p> </p>
+        <div> <%= link_to 'Voltar', usuarios_path, class:'botaovoltar'%> </div>
+    </div>        
+</div>

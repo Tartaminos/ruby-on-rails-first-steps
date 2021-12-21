@@ -1,0 +1,19 @@
+<%= form_tag(login_path) do %>
+<table>
+    <tbody><div class="estiloindex">
+    <div class="fonte"> Digite seu login para continuar..</div>
+        
+        <p> <%= label_tag :email, 'Email'%></p>
+        <p> <%= text_field_tag :email %>
+        <p> <%= label_tag :senha, 'Senha'%></p>
+        <p> <%= password_field_tag :senha %></p>
+        <% if @erro == "" %>
+        <% else %>
+        <h3 class="errosmenor"><%= @erro %></h3>
+        <% end %>
+        <div><%= submit_tag 'Entrar' %></div>
+
+        <%end%>
+    </div>    
+    </tbody>
+</table>

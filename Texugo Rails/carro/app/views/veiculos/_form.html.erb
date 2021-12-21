@@ -1,0 +1,19 @@
+
+<div class="estilotexto">
+<%= form_for @veiculo do |f| %>
+    <p><%= f.label :nome, 'Nome' %></p>
+    <p><%= f.text_field :nome, class: 'centro' %></p>
+    <p><%= f.label :velocidade_maxima, 'Velocidade Máxima'%></p>
+    <p><%= f.number_field :velocidade_maxima, class: 'centro' %></p>
+    <p><%= f.label :velocidade_atual, 'Velocidade Atual' %></p>
+    <p><%= f.number_field :velocidade_atual, class: 'centro' %></p>
+    <p><%= f.label :quantidade_marchas, 'Quantidade de Marchas' %></p>
+    <p><%= f.number_field :quantidade_marchas, class: 'centro' %></p>
+    <p><%= f.label :marcha_atual, 'Marcha Atual' %></p>
+    <p><%= f.number_field :marcha_atual, class: 'centro' %></p>
+    <% unless @veiculo.new_record? %>
+        <p><%= f.label :ligado, 'Ligado?' %></p>
+        <p><%= f.check_box :ligado, class: 'centro' %></p>
+    <% end %>
+    <%= f.submit 'Manda Bala Pew Pew', class: 'mandabala' %>
+<% end %> </div>

@@ -1,0 +1,170 @@
+.negrito{
+    font-weight:bold;
+}
+
+.direita{
+    text-align:right;
+}
+.esquerda{
+    text-align: left;
+
+}
+.margincentro{
+    margin: 0 auto;
+}
+table{
+    width: 90%;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+th, td{
+    border:1px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.estilotexto {
+    color:black;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 20%; 
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+
+
+.botao {
+    font-size: x-large;
+    font-weight: bold;
+    color:white;
+    background-color: seagreen;
+    text-align: center;
+    border: 1px solid black;
+    width: 8%; 
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.botao2 {
+    
+    text-align: center;
+    width: 8%; 
+    margin: 0 auto;
+}
+
+.botao_voltar{
+    font-size: large;
+    font-weight: bold;
+    color:white;
+    background-color: seagreen;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 30%; 
+    border-radius: 5px;
+}
+
+.mandabala {
+    font-size: medium;
+    font-weight: bold;
+    color:white;
+    background-color: seagreen;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10 auto;
+    width: 75%; 
+    border-radius: 5px;
+
+}
+
+.editar{
+    font-size: small;
+    font-weight: bold;
+    color:white;
+    background-color: seagreen;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 65%; 
+    border-radius: 5px;
+
+
+}
+
+.bordatabela{
+    border-radius: 15px;
+
+
+
+}
+
+.nomestilo{
+    color: white;
+    width: 100%;
+    font-weight: bold;
+       
+}
+.verdefloresta{
+    background-color: forestgreen;
+
+}
+
+.centro{
+    text-align: center;
+
+}
+
+.excluir{
+    font-size: small;
+    font-weight: bold;
+    color:white;
+    background-color: #9d0000;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 65%; 
+    border-radius: 5px;
+
+}
+
+.fundo_div{
+    width: 80%;
+    height: 800px;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.velocidade{
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: black;
+    color: rgb(161, 0, 0);
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contador_marcha{
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: black;
+    color: rgb(161, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: auto;
+    text-align: center;
+}
+
+.fundo_div_vel{
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+}

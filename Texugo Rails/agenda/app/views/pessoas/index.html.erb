@@ -1,0 +1,22 @@
+<table>
+    <thead>
+    <div class="botao_na_esquerda"><%=link_to 'New', new_pessoa_path, class:'botao'%></div>
+        <tr>
+            <th> Nome</th>
+            <th> Sobrenome </th>
+            <th> Empresa </th>
+        </tr>
+    </thead>
+        <tbody>
+            <% @pessoa.each do |pessoa| %>
+                <tr>
+                    <td class="fundoeditar"> <%= link_to pessoa.nome, pessoa_path(id: pessoa.id), class:'estilo_nomes'%> </td>
+                    <td> <%= pessoa.sobrenome %> </td>
+                    <td> <%= pessoa.empresa %> </td>
+                    <td class="fundoeditar"> <%= link_to 'Editar', edit_pessoa_path(id: pessoa.id), class:'editar' %> </td>
+                    <td class="fundoexcluir"> <%= link_to 'Excluir', pessoa_path(id: pessoa.id), method: :delete, confirm: 'are u sure my brother?!', class:'excluir'%> </td>
+                </tr>
+                    
+            <% end %>
+        </tbody>
+</table>

@@ -1,0 +1,30 @@
+
+<div class="div_index_geral">
+    <% if @usuario.errors.any? %>
+  <div id="error_explanation">
+    <h2 class="erros"><%= pluralize(@usuario.errors.count, "error") %> As informações não podem ser salvas: </h2>
+ 
+    <ul class="erros">
+    <% @usuario.errors.full_messages.each do |msg| %>
+      <li><%= msg.humanize %></li>
+    <% end %>
+    </ul>
+  </div>
+    <% end %>
+    <%= form_for @usuario do |f| %>
+        <p><%= f.label :nome,'Nome' %> </p>
+        <p><%= f.text_field :nome, class:'centro'%> </p>
+        <p><%= f.label :email,'Email'%> </p>
+        <p><%= f.text_field :email, class:'centro' %> </p>
+        <p><%= f.label :senha, 'Senha'%> </p>
+        <p><%= f.text_field :senha, class:'centro' %></p>
+        <p><%= f.label :senha_confirmation, 'Confirme a senha' %></p>
+        <p> <%= f.text_field :senha_confirmation, class:'centro' %>
+        <p><%= f.label :codigo, 'Codigo' %></p>
+        <p><%= f.text_field :codigo, class:'centro' %></p>
+        <p><%= f.label :gerente,'Gerente' %></p>
+        <p><%= f.check_box :gerente %></p>
+        <div> <%= f.submit "Salvar"  %></p>
+        
+    <% end %> 
+</div> 

@@ -1,0 +1,230 @@
+.centro{
+    text-align: center;
+}
+
+.nome_caixa{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    width: 50%;
+    background-color: rgba(59, 59, 255, 0.2);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.local_caixa{
+    margin: 0 auto;
+    width: 75%;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius:15px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+.dentro_local{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    width: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+    border-bottom-width: 10%;
+    border-top-width: 10%;
+
+}
+
+.tabela_caixas{
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    border-bottom-width: 10%;
+    border-top-width: 10%;
+    overflow: auto;
+
+}
+.cabecalho{
+    width: 50%;
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.dentro_tabela{
+    margin: 10 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2px;
+    background-color:rgb(0, 116, 0);
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+.notas_disponiveis{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    width: 50%;
+    background-color: whitesmoke;
+    border-bottom-width: 10%;
+    border-top-width: 10%;
+}
+
+
+.funcoes{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    width: 75%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.bemvindo{
+    width: 50%;
+    margin:0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 15px;
+    border-bottom-width: 10%;
+    border-top-width: 10%;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(59, 59, 255, 0.2);
+}
+
+.botaonovo{
+    margin:0 auto;
+    border-style: ridge;
+    border-color: black;
+    width: 20%;
+    border-width: 1px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(59, 59, 255, 0.2);
+}
+
+.botao_editar{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-color: black;
+    width: 25%;
+    font-weight: bold;
+    color: black;
+    
+    
+}
+
+.botaovoltar{
+    background-color: rgb(0, 116, 0);;
+    border-radius: 5px;
+    border-color: black;
+    width: 50%;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+}
+
+.botao_excluir{
+    background-color: rgba(184, 8, 8, 0.863);
+    border-radius: 5px;
+    border-color: black;
+    width: 25%;
+    font-weight: bold;
+    color:white;
+    margin: 0 auto;
+
+}
+
+.fundo_caixas{
+    padding-top: 20px;
+    background-color: rgba(59, 59, 255, 0.2);
+    border-radius: 15px;
+    border-color: black;
+    border: 0.5px; 
+    width: 50%;
+    margin: 0 auto;
+
+
+}
+
+.div_index_geral{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(59, 59, 255, 0.2);
+    border-radius: 15px;
+    width: 20%;
+    
+}
+
+.erros{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    border-radius: 15px;
+    border-color: black;
+    width: 80%; 
+}
+.errosmenor{
+
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    border-radius: 15px;
+    border-color: black;
+    width: 50%; 
+
+}
+.field_with_errors {
+    padding: 2px;
+    background-color: rgb(255, 251, 0);
+    display: table;
+    margin: 0 auto;
+    
+  }
+
+.divindex{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    width: 20%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.pad{
+    padding-top: 20%;
+}
+.estiloindex{
+    margin: 0 auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    border-radius:15px;
+    width: 40%;
+    background-color: rgba(59, 59, 255, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+

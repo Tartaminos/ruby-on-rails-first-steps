@@ -1,0 +1,11 @@
+<div class="form">
+<%= form_for @pessoa do |f| %>
+    <p><%= f.label :nome, 'Nome' %> </p>
+    <p><%= f.text_field :nome, class:'centro' %> </p>
+    <p><%= f.label :sobrenome, 'Sobrenome'%> </p>
+    <p><%= f.text_field :sobrenome, class:'centro' %> </p>
+    <p><%= f.label :empresa, 'Empresa' %> </p>
+    <p><%= f.text_field :empresa, class:'centro' %></p>
+    <%=link_to 'Cancelar', root_path, class:'botaoedit'%>
+    <%= f.submit 'VAAAAAAAAAAIIII', class:'botaoedit' %>
+<% end %> </div>

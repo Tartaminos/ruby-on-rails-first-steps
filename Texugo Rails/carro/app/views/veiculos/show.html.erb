@@ -1,0 +1,25 @@
+
+<div class="estilotexto">
+    <div> <b>Nome: </b><%= @veiculo.nome %></b> </div>
+    <div> <b>Velocidade Máxima: </b><%= @veiculo.velocidade_maxima %></b> </div>
+    <div> <b>Velocidade Atual: </b><%= @veiculo.velocidade_atual %></b> </div>
+    <div> <b>Quantidade de Marchas: </b><%= @veiculo.quantidade_marchas %></b> </div>
+    <div> <b>Marcha Atual: </b><%= @veiculo.marcha_atual %></b> </div>
+    <div> <b>Ligado?: </b><%= @veiculo.ligado  ? 'sim' : 'não' %></b> </div> <p> </p>
+    <div>  <%if @veiculo.ligado == false   %>
+        <%= button_to 'Ligar', ligar_path(id: @veiculo.id)%>
+           <%else %>
+        <%= button_to 'Desligar', desligar_path(id: @veiculo.id) %> 
+            <%end %>
+    </div>
+    <div> <%= button_to 'Acelerar', acelerar_path(id: @veiculo.id) if @veiculo.pode_acelerar? %> 
+    </div><p>
+
+        </p><div> <%= button_to 'Frear', frear_path(id: @veiculo.id) %></div> <p> </p>
+    <div class="botao_voltar"> <%= link_to"Voltar", root_path %></div>
+</div>
+<p> </p>
+<div class="fundo_div_vel">
+    <div class="contador_marcha"> <%= @veiculo.marcha_atual %></div>
+    <div class="velocidade"> <%= @veiculo.velocidade_atual %> </div>   
+</div>

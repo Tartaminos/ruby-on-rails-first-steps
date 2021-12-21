@@ -1,0 +1,169 @@
+<html>
+        <meta charset="utf-8"/>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Aluno</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="negrito">Ada Augusta King</td>
+                        <td class="centraliza"id="nad1a"><input id="entradan1ada" type="text"><span id="span1ada">9.5</span><input id="retorno1ada"type="submit"></td>
+                        <td class="centraliza"id="n2ada"><input id="entradan2ada" type="text"><span id="span2ada">9</span><input id="retorno2ada"type="submit"></td>
+                        <td class="centraliza"id="adamedia"></td>
+                    </tr>
+                    <tr>
+                        <td class="negrito">Charles Babagge</td>
+                        <td class="centraliza" id="n1cha"><input id="entrada1cha" type="text"><span id="span1cha">9</span><input id="retorno1cha"type="submit"></td>
+                        <td class="centraliza" id="n2cha"><input id="entrada2cha" type="text"><span id="span2cha">8.5</span><input id="retorno2cha" type="submit"></td>
+                        <td class="centraliza"id="chamed"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </head>
+</html>
+
+<style>
+    .centraliza{
+        text-align:center
+    }
+
+.negrito{
+        font-weight:bold;
+    }
+
+    .direita{
+        text-align:right;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td{
+        border:1px solid black;
+    }
+</style>
+
+<script type="text/javascript">
+
+
+$('#entradan1ada').hide();
+    $('#retorno1ada').hide();
+    $('#span1ada').show();
+$('#span1ada').on('click',function(){
+    $('#entradan1ada').show();
+    $('#entradan1ada').val($('#span1ada').html());
+    $('#span1ada').hide();
+    $('#retorno1ada').show();
+    
+});
+
+
+$('#entradan2ada').hide();
+    $('#retorno2ada').hide();
+    $('#span2ada').show();
+$('#span2ada').on('click',function(){
+    $('#entradan2ada').show();
+    $('#entradan2ada').val($('#span2ada').html());
+    $('#span2ada').hide();
+    $('#retorno2ada').show();
+    
+});
+
+
+$('#entrada1cha').hide();
+    $('#span1cha').show();
+$('#span1cha').on('click',function(){
+    $('#entrada1cha').show();
+    $('#entrada1cha').val($('#span1cha').html());
+    $('#span1cha').hide();
+    
+});
+
+
+$('#entrada2cha').hide();
+    $('#span2cha').show();
+$('#span2cha').on('click',function(){
+    $('#entrada2cha').show();
+    $('#entrada2cha').val($('#span2cha').html());
+    $('#span2cha').hide();
+    
+});
+
+/*aqui começa os botão*/
+    
+    
+    $('#span1ada').show();
+$('#retorno1ada').on('click',function(){
+    $('#span1ada').html($('#entradan1ada').val());
+    $('#span1ada').show();
+    $('#entradan1ada').hide();
+    $('#retorno1ada').hide();
+    
+    
+});
+
+
+$('#entradan2ada').hide();
+    $('#span2ada').show();
+$('#span2ada').on('click',function(){
+    $('#entradan2ada').show();
+    $('#entradan2ada').val($('#span2ada').html());
+    $('#span2ada').hide();
+    
+});
+
+
+$('#entrada1cha').hide();
+    $('#span1cha').show();
+$('#span1cha').on('click',function(){
+    $('#entrada1cha').show();
+    $('#entrada1cha').val($('#span1cha').html());
+    $('#span1cha').hide();
+    
+});
+
+
+$('#entrada2cha').hide();
+    $('#span2cha').show();
+$('#span2cha').on('click',function(){
+    $('#entrada2cha').show();
+    $('#entrada2cha').val($('#span2cha').html());
+    $('#span2cha').hide();
+    
+});
+
+
+var medada = (parseFloat($('#n1ada').html())+parseFloat($('#n2ada').html()))/2;
+
+var medcha = (parseFloat($('#n1cha').html())+parseFloat($('#n2cha').html()))/2;
+
+
+$('#adamedia').html(medada);
+    if($('#adamedia').html () > 7){
+        $('#adamedia').css('background-color','green');
+    } else {
+        $('#adamedia').css('background-color','red');
+    } 
+
+
+
+$('#chamed').html(medcha);
+    if($('#chamed').html () > 7){
+        $('#chamed').css('background-color','green');
+    } else {
+        $('#chamed').css('background-color','red');
+    } 
+
+
+
+</script>

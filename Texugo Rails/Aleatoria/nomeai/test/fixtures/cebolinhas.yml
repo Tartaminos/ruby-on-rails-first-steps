@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cabelo: MyString
+  olhos: MyString
+  orelhas: MyString
+  idade: 1
+  altura: 1.5
+  vivo: false
+
+two:
+  cabelo: MyString
+  olhos: MyString
+  orelhas: MyString
+  idade: 1
+  altura: 1.5
+  vivo: false

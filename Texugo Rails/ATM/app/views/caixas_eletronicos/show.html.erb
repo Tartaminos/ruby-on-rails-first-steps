@@ -1,0 +1,36 @@
+ 
+            
+        <div class="dentro_local">
+            <div class="fundo_caixas">
+                <p> </p>
+                <div> <b> <%=@caixa_eletronico.nome%> </b> </div> 
+                <h1> </h1>
+                <div class="local_caixa"> <%=@caixa_eletronico.local%> </div>
+                <h1> </h1>
+                <div class="funcoes"> Funcionando? <%= @caixa_eletronico.funcionando ? 'sim' : 'não'%> </div>
+                <h1></h1>
+                <p> </p>
+                <div class="funcoes"> Valor Caixa: <%= @caixa_eletronico.valor_caixa %></div>
+                <p></p>
+                <%= form_for @caixa_eletronico do |f| %>
+                     <div> Notas Disponíveis
+                        <p><%= f.label :nota2, 'Nota 2' %></p>
+                        <p><%= f.number_field :nota2, disabled: true, class:'centro' %></p>
+                        <p><%= f.label :nota5, 'Nota 5' %></p>
+                        <p><%= f.number_field :nota5, disabled: true, class:'centro' %></p>
+                        <p><%= f.label :nota10, 'Nota 10' %></p>
+                        <p><%= f.number_field :nota10, disabled: true, class:'centro' %></p>
+                        <p><%= f.label :nota20, 'Nota 20' %></p>
+                        <p><%= f.number_field :nota20, disabled: true, class:'centro' %></p>
+                        <p><%= f.label :nota50, 'Nota 50' %></p>
+                        <p><%= f.number_field :nota50, disabled: true, class:'centro' %></p>
+                        <p><%= f.label :nota100, 'Nota 100' %></p>
+                        <p><%= f.number_field :nota100, disabled: true, class:'centro' %></p>
+                        <p> <%=  link_to "Sacar", mostrar_saque_path(id: @caixa_eletronico.id) %></p>
+                        <div> <%= link_to "Abastecer", edit_caixa_eletronico_path %></div>
+                    </div>
+                <%end %>
+                <p></p>
+                <div> <%= link_to 'Voltar', caixas_eletronicos_path, class:'botaovoltar'%> </div>
+            </div>        
+        </div>  

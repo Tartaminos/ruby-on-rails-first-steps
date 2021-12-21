@@ -1,0 +1,97 @@
+table{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+
+}
+
+th, tr, td{
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.botao{
+    font-weight: bold;
+    font-size: xx-large;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #009d00;
+    color: white;
+}
+
+.editar{
+    font-size: medium;
+    border-radius: 10px;
+    text-align: center;
+    color: white; 
+}
+
+.fundoeditar{
+    background-color: #009d00;
+}
+
+.fundoexcluir{
+    background-color: #890000;
+}
+
+.excluir{
+    font-size: medium;
+    border-radius: 10px;
+    text-align: center;
+    color: white; 
+}
+
+.form{
+    margin: 0 auto;
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.botaoedit{
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #009d00;
+    color: white;
+
+}
+
+.botao_na_esquerda{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.centro{
+    text-align: center;
+    
+}
+
+.show{
+    margin: 0 auto;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+
+}
+
+.estilo_nomes{
+    font-size: large;
+    text-align: center;
+    background-color: #009d00;
+    color: white;
+}
